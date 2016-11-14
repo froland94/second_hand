@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Second Hand</title>
+	<meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)" />
+	<link type="text/css" rel="stylesheet" href="second_hand.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body onload="changeImage('satchel_img','shoes_img','watch_img'),login()"> 
+
+<div id="container">
+	
+	<p id="title"><a href="index.html"  >SECOND HAND</a></p>
+	
+	<a id="shop" href="shop.php"  >SHOP</a>
+	
+</div>
+<div id="header">
+     <div id="pur_button" onclick="purchases()" class="head">My Purchases</div>
+	<div id="registration_button" onclick="document.getElementById('registration_panel').style.display='block'" class="head">Registration</div>
+	<div id="login_button" onclick="document.getElementById('log_panel').style.display='block'" class="head">Login</div>
+	<div id="logout_button" onclick="logout()" class="head">Logout</div>
+</div>
+<div id="pur_panel"></div>
+<div id="registration_panel" class="login_panel">
+	<div class ="cont">
+		<div id="reg_x" class="x" onclick="document.getElementById('registration_panel').style.display='none'">X</div>
+		
+		<p class="log_title">Registration Panel</p>
+		
+		<form id="MyForm">
+		<input id="reg_username" type="text" value="Username"  onfocus="input_focus('reg_username','Username')" onblur="input_blur('reg_username','Username')" />
+		<input id="reg_password" type="text" value="Password"  onfocus="input_focus('reg_password','Password')" onblur="input_blur('reg_password','Password')" />
+		<input id="firstname" type="text" value="First name"  onfocus="input_focus('firstname','First name')" onblur="input_blur('firstname','First name')" />
+		<input id="surname" type="text" value="Surname"  onfocus="input_focus('surname','Surname')" onblur="input_blur('surname','Surname')" />
+		<input id="city" type="text" value="City"  onfocus="input_focus('city','City')" onblur="input_blur('city','City')" />
+		<input id="address" type="text" value="Address"  onfocus="input_focus('address','Address')" onblur="input_blur('address','Address')" />
+		<input id="nmb" type="text" value="nmb"  onfocus="input_focus('nmb','nmb')" onblur="input_blur('nmb','nmb')" />
+		<div id="reg_send" onclick="check_reg();" >REGISTRATION</div>
+		</form>
+	</div>
+</div>
+<div id="log_panel" class="login_panel">
+
+	<div class ="cont">
+		<div id="login_x" class="x" onclick="document.getElementById('log_panel').style.display='none'"> X </div>
+		<p class="log_title">Login</p>
+		<input id="username" type="text" value="Username"  onfocus="input_focus('username','Username')" onblur="input_blur('username','Username')" />
+		<input id="password" type="text" value="Password"  onfocus="input_focus('password','Password')" onblur="input_blur('password','Password')" />
+		<div id="login_but" onclick="login();" >LOGIN</div>
+	</div>
+</div>			  
+<div id="middle">
+
+    <div id="shoes_mid" class="mid" onclick="location.href='shop.php?type=3';">
+        <img id="shoes_img" class="mid_img" alt="kep" src="images/shoes.jpg" /><br/>
+		<div class="mid_title"  >SHOES</div>
+    </div>
+	
+	<div id="satchel_mid" class="mid" onclick="location.href='shop.php?type=2';">
+        <img id="satchel_img" class="mid_img" alt="kep" src="images/satchel.jpg" /><br/>
+		<div class="mid_title">SATCHELS</div>
+    </div>
+	
+	<div id="watch_mid" class="mid" onclick="location.href='shop.php?type=1';">
+        <img id="watch_img" class="mid_img" alt="kep" src="images/watch.jpg" /><br/>
+		<div class="mid_title">WATCHES</div>
+    </div>
+
+</div>
+
+
+<div id="footer"> 
+
+    <div class="foot">
+	    <div class="foot_title">COMPANY</div><br />
+		<div id="about" class="foot_body">About Us</div><br />
+		<div class="foot_body">Work Here</div><br />
+		<div id="team"class="foot_body">Team</div><br />
+		<div class="foot_body">Happenings</div><br />
+	</div>
+	
+	<div class="foot">
+	    <div class="foot_title">SERVICE</div><br />
+		<div class="foot_body">Support</div><br />
+		<div class="foot_body">FAQ</div><br />
+		<div id="contact" class="foot_body">Contact Us</div><br />
+	</div>
+	
+	<div class="foot">
+	    <div class="foot_title">ORDERS & RETURN</div><br />
+		<div class="foot_body">Shipping Policy</div><br />
+		<div class="foot_body">Return Policy</div><br />
+	</div>
+	
+</div>
+
+<div id="about_panel" class="panel" >
+    <div id="about_x" class="x"> X </div>
+	<p class='panel_title'>About Us</p>
+	We make the little stuff better. The stuff you have that isn't noticed first, but can't be ignored. We pay attention to it. We argue about it. We work day and night to make the little stuff as good as it can be, so when you wear it, you feel like you've got a leg up on the rest of the world.<br />
+    We believe that you warrant a lot of respect. When you choose to wear a watch, put on your shoes, or select a satchel to hold your hard earned cash, you deserve to have something that reflects your entire package. You may not know how to say it, but you've got something to say and you can't slap on an off-the-shelf piece and consider yourself you. That's why in '98 we started Second Hand and that's why all these years later, we're still here.<br />
+    Nestled comfortably against the Pacific Ocean in Southern California and with offices tucked neatly next to some of the best spots in Europe, Australia, and Asia you'll find Second Hand people doing what we do. We make accessories to reflect who we are and the life we live. We travel all corners of the globe to experience life and it is through these explorations, the people we meet and the journey to get there that takes shape in the things we create.<br />
+    It started as a frustration at a lack of quality watches that simultaneously do the talking for you and has since grown into a group of athletes, rock stars, retailers, and dedicated loyalists that bring Second Hand products to market. Fueled by adventures far and wide and often sometimes by those that happen just down the street we deliver products that meet your needs in various high-stress work and play environments. It is through our dedicated team's perspectives that we contribute to a single unified expression: team-designed, custom-built accessories for a life well lived. Welcome to Second Hand.
+</div>
+
+<div id="team_panel" class="panel" >
+
+    <div id="team_x" class="x"> X </div>
+	
+	<p class='panel_title'>Team</p>
+	
+	<div class="profile">
+	    <img class="profile_img" alt="kep" src="images/f_profile.jpg" />
+	    <div class="profile_desc">name: Faragó Roland<br />position: Programmer, Seller<br />contact: farago@gmail.com</div>
+	</div>
+	
+</div>
+
+<div id="contact_panel">
+
+    <div id="contact_x" class="x"> X </div>
+	
+	<p class='panel_title'>Contact Us</p>
+	
+	<div class="contact_desc">name: SECOND HAND</div>
+	<div class="contact_desc">Phone: 061-71-85-635</div>
+	<div class="contact_desc">location: Szegedi ut 5.</div>
+	<div class="contact_desc">e-mail: Second_Hand@gmail.com</div>
+	<div class="contact_desc">web: www.Second_Hand.com</div>
+	
+</div>
+<script src="second_hand.js"></script>
+<script src="shop.js"></script>
+</body>
+</html>
